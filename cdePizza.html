@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pizza Mendes France</title>
+        <link rel="stylesheet" href="ex4style.css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+
+    <body>
+    	<header>
+    		<img src="bandeau.jpg" alt="bandeau site" id="banniere"/>
+    	</header>
+    	<div class="conteneur">
+    		<nav>
+                <h2>La carte :</h2>
+    			<ul>
+    				<li> <a href=#> Nouveautés et promos </a></li>
+    				<li> <a href=#> Pizzas </a></li>
+    				<li> <a href=#>Boissons</a></li>
+                    <li> <a href=#> Salades </a></li>
+                    <li> <a href=#> Menus </a></li>
+                    <li> <a href=#>Desserts</a></li>
+    			</ul>
+    		</nav>
+    		<section>
+                <h1> Pizza Mendès France </h1>
+    			<p>Veuillez choisir votre pizza !</p>
+                <form method="get" action="recapitulatif.php">
+        			<h2> Les classiques</h2>
+                    <div class="conteneur">
+                        <div class="pizza">
+                            <p class='titre'>La qui pique !</p>
+                            <img src="pique.png" alt="pizz qui pique">
+                            <p>Merguez, piment, poivre,moutarde,wasabi</p>
+                            <label for="nbPique">Quantité ?</label>
+                            <input type="number" name="nbPique" id="nbPique" value='0'>× 12€
+                        </div>
+                        <div class="pizza">
+                            <p class='titre'>La beaucoup de fromage !</p>
+                            <img src="fromage.png" alt="pizz fromage">
+                            <p>Munster, comté, emmental, roquefort, maroilles, camenbert</p>
+                            <label for="nbFromage">Quantité ?</label>
+                            <input type="number" name="nbFromage" id="nbFromage" value='0'>× 10€
+                        </div>
+                        <div class="pizza">
+                            <p class='titre'>La pas chère !</p>
+                            <img src="paschere.png" alt="pizz pas chere">
+                            <p>Sauce tomate</p> 
+                            <label for="nbPasChere">Quantité ?</label>
+                            <input type="number" name="nbPasChere" id="nbPasChere" value='0'>× 6€
+                        </div>
+                    </div>
+                    <h2> La sur-mesure</h2>
+                    <div class="conteneur">
+                        <div>
+                            <p>Choisissez la base et les garniture que vous voulez : </p>
+                            <p class="gras">La base (6€) </p>
+                            <input type="radio" id="saucetomate" name="base" value="saucetomate">
+                            <label for="saucetomate">Sauce tomate</label>
+                            <input type="radio" id="creme" name="base" value="creme">
+                            <label for="creme">Crème</label>
+                            <p class="gras">Les viandes (2€ par garniture) :</p>
+                            <input type="checkbox" id="jambon" name="viande[]" value="jambon">
+                            <label for="jambon">Jambon</label>
+                            <input type="checkbox" id="lard" name="viande[]" value="lard">
+                            <label for="lard">Lard</label>
+                            <input type="checkbox" id="chorizo" name="viande[]" value="chorizo">
+                            <label for="chorizo">Chorizo</label>
+                            <input type="checkbox" id="saumon" name="viande[]" value="saumon">
+                            <label for="saumon">Saumon</label>
+                             <p class="gras">Les légumes (0,5€ par garniture) :</p>
+                            <input type="checkbox" id="tomate" name="legume[]" value="tomate">
+                            <label for="tomate">Tomate</label>
+                            <input type="checkbox" id="oignon" name="legume[]" value="oignon">
+                            <label for="oignon">Oignon</label>
+                            <input type="checkbox" id="poivron" name="legume[]" value="poivron">
+                            <label for="poivron">Poivron</label>
+                            <input type="checkbox" id="champignon" name="legume[]" value="champignon">
+                            <label for="champignon">Champignon</label>
+                            <br/>
+                            <input type="checkbox" id="artichaud" name="legume[]" value="artichaud">
+                            <label for="artichaud">Artichaud</label>
+                            <input type="checkbox" id="roquette" name="legume[]" value="roquette">
+                            <label for="roquette">Roquette</label>
+                            <input type="checkbox" id="brocoli" name="legume[]" value="brocoli">
+                            <label for="brocoli">Brocoli</label>
+                            <input type="checkbox" id="aubergine" name="legume[]" value="aubergine">
+                            <label for="aubergine">Aubergine</label>
+                        </div>
+                        <div id="ingredients">
+                            <img src="ingredients.jpg" width="400px" >
+                        </div>
+                    </div>
+                    <label for="nbmesure">Combien de pizzas sur mesure désirez vous </label>
+                    <input type="number" name="nbmesure" id="nbmesure">
+                    <br><br><br>
+
+                    <button type="submit">Commander</button>
+                 </form>
+    		</section>
+    	</div>
+    </body>
+</html>
