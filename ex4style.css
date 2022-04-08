@@ -1,0 +1,84 @@
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('fond.png');
+}
+
+#banniere
+{
+    width: 100%;
+    min-width: 800px;
+}
+
+.conteneur
+{
+    display: flex;
+}
+
+/* fenêtre de menu*/
+nav
+{
+    min-width: 250px;
+    background-color: rgba(173,181,255,0.4);
+    font-size: 25px;
+    color:indigo;
+    min-height: 800px;
+}
+
+li
+{
+
+    margin: 10px;
+}
+
+h2
+{
+    text-decoration: underline;
+}
+a
+{
+    color:indigo;
+    text-decoration: none;
+}
+
+/*section */
+section
+{
+    padding-left: 10px;
+    min-width: 800px;
+}
+h1
+{
+    font-size: 50px;
+    color:#6B5EFF;
+    text-align: center;
+    font-family: Brush Script MT, Verdana, sans-serif;
+}
+
+.titre
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+.gras
+{
+    font-weight: bold;
+}
+
+p
+{
+    padding: 5px;
+}
+
+.pizza
+{
+    border: solid black 1px;
+    padding: 10px;
+}
+
+#ingredients
+{
+    margin: 20px;
+}
